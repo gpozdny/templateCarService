@@ -134,7 +134,9 @@
   min-width: 100%;
   justify-content: center;
   align-items: center;
+    @include phones {
 
+    }
 }
 
 .slider-item__title {
@@ -143,6 +145,9 @@
   margin-right: 45%;
   //align-self: flex-start;
   z-index: 1;
+    @include phones {
+      margin-right: 10%;
+    }
 }
 
 .slider-item__car {
@@ -156,6 +161,14 @@
   max-width: 990px;
   font-size: 20px;
   z-index: 1;
+  padding:  0 20px;
+  justify-content: center;
+  align-items: center;
+    p {
+      @include phones {
+        width: 70%;
+      }
+    }
 }
 
 .feedback__form {
@@ -164,6 +177,9 @@
   margin-top: 50px;
   width: 100%;
   padding: 0 80px;
+    @include phones {
+      padding: 0 20px;
+    }
 }
 
 .feedback__form-wrap  {
@@ -269,6 +285,9 @@
   display: flex;
   right:  25%;
   top: 10%;
+  @include phones {
+    top: 7%;
+  }
 }
 
 .fa-arrow-circle-left,  .fa-arrow-circle-right  {
