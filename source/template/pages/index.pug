@@ -1,0 +1,42 @@
+doctype html
+html
+    head
+        meta(charset="utf-8")
+        block title
+            title Главная страница
+        meta(content="" name="author")
+        meta(content="" name="description")
+        meta(content="" name="keywords")
+        meta(content="width=device-width, initial-scale=1" name="viewport")
+        meta(content="ie=edge" http-equiv="x-ua-compatible")
+        meta(name="google-site-verification" content="iVOX40lpI8BwVVSjJi0Z2XxiDf-dMpg-Y0g0R-YUeg4")
+
+        //- favicon block start
+        //- favicon block end
+
+        link(rel='stylesheet' href='assets/css/foundation.css')
+        link(rel='stylesheet' href='assets/css/app.css')
+        link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Exo+2')
+        script(src='assets/js/foundation.js' defer)
+        script(src='assets/js/hammer.js' defer)
+        script(src='assets/js/compare.js' defer)
+
+        script(src='https://api-maps.yandex.ru/2.1/?lang=ru_RU' type="text/javascript")
+
+        <!--[if lt IE 9]>
+        script(src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js")
+        <![endif]-->
+
+    body
+        .wrapper
+            include ../sections/header.pug
+            include ../sections/slider.pug
+            include ../sections/service.pug
+            include ../sections/gallery.pug
+            include ../sections/feedback.pug
+            include ../sections/contacts.pug
+            a(class="wrapper__button" href="#")
+                i(class="fa fa-arrow-up" aria-hidden="true")
+        include ../sections/footer.pug
+        script(src='assets/js/app.js' defer)
+

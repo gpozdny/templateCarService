@@ -1,0 +1,28 @@
+// variables
+
+.red  {
+  color: red !important;
+}
+
+
+// fonts
+
+@import "fonts/font-awesome";
+
+//misc
+@import "_misc/mixins";
+@import "_misc/adjustment";
+@import "images-compare.min.css";
+
+// sections
+
+@import "sections/header";
+@import "sections/slider";
+@import "sections/service";
+@import "sections/gallery";
+@import "sections/feedback";
+@import "sections/contacts";
+@import "sections/footer";
+
+
+

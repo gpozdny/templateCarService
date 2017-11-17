@@ -1,0 +1,128 @@
+// adjustment vars
+//$footer-height: 185px;
+$container-width: 1160px;
+
+// adjustment styles
+
+html {
+	font-size: 16px;
+	font-family: 'Exo 2', sans-serif;
+	@include desktop	{
+		.container	{
+			width: 970px;
+		}
+	}
+
+
+	@include laptop	{
+		font-size: 15px;
+		.container	{
+			width: 100%;
+			padding: 0 20px;
+		}
+
+	}
+	@include tablets	{
+		font-size: 14px;
+		.container	{
+			width: 100%;
+			padding: 0 20px;
+		}
+
+	}
+	@include phones	{
+		font-size: 12px;
+		.container	{
+			width: 95%;
+			padding: 0;
+		}
+	}
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+}
+
+body {
+	line-height: 1.42;
+	-webkit-font-smoothing: antialiased;
+}
+
+.wrapper { //fixed bottom footer
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	overflow: hidden;
+	//min-width: $container-width + 20px;
+}
+
+//.wrapper:after {
+//	content: "";
+//	display: block;
+//	height: 280px;
+//	overflow: hidden;
+//}
+
+.maincontent {
+	flex: 1;
+    display: flex;
+}
+
+* {
+	box-sizing: border-box;
+	outline: none;
+}
+
+.container {
+	display: flex;
+	width: 1160px;
+}
+
+.container--column	{
+	flex-direction: column;
+}
+
+
+
+li {
+	list-style: none;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+}
+
+footer {
+	//height: $footer-height;
+//	width: 100%;
+//	margin-top: -$footer-height + 100px;
+	position: relative;
+//	min-width: $container-width + 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	font-weight: normal;
+}
+
+a {
+	text-decoration: none;
+	display: block;
+}
+
+h1, h2 {
+
+}
+
+//TITLE
+
+.title{
+	font-size: 46px;
+	color: rgb(47, 48, 54);
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+}
