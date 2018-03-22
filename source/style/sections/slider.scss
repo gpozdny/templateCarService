@@ -44,6 +44,9 @@
   margin-top: 20px;
   //position: absolute;
   //bottom: 20px;
+  @include phones {
+    margin-bottom: 20px;
+  }
 }
 
 .slider__link {
